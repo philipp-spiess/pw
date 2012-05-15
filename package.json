@@ -1,0 +1,27 @@
+{
+  "name": "pw",
+  "version": "0.0.1",
+  "description": "Password Manager",
+  "homepage":"https://github.com/philipp-spiess/pw", 
+  "keywords": [
+    "pw", 
+    "password", 
+    "manager", 
+    "password-manager"
+  ],
+  "author": "Philipp Spieß <philipp.spiess@myxcode.at>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipp-spiess/pw.git"
+  },
+  "main": "index",
+  "engines": { 
+    "node": ">= 0.6.0" 
+  },
+  "dependencies": {
+    "coffee-script": "*"
+  },
+  "bin" : {
+    "pw" : "./bin/pw"
+  }
+}

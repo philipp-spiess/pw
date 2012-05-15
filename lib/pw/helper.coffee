@@ -10,7 +10,7 @@ module.exports.readPassword = (fn) ->
   process.stdin.setEncoding 'utf-8'
   tty.setRawMode true
 
-  process.stdout.write 'Password: '
+  process.stdout.write 'Password:'
 
   password = ''
   process.stdin.on 'data', (char) ->
@@ -32,6 +32,7 @@ module.exports.encrypt = (message, password) ->
   crypted = cipher.update message, 'utf8', 'hex'
   crypted += cipher.final 'hex'
 
+# And decrypt it back. Yay!
 module.exports.decrypt = (crypted, password) ->
   decipher = crypto.createDecipher 'aes-256-cbc', password
   message = decipher.update crypted, 'hex', 'utf8'

@@ -84,7 +84,7 @@ if what? or what is '-h'
 
 # Help, bitches love help
 else
-  console.log '          pw help'
+  console.log 'pw help'
   console.log '===========================\n'
   console.log 'pw list - List all the passwords'
   console.log 'pw add SERVICE NAME PASSWORD - Add a new password'
